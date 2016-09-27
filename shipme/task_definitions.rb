@@ -12,6 +12,7 @@ common = {
   memory_reservation: 2,
   environment: [
     {name: "DATABASE_URL", value: "mysql2://user:pass@domani.com:3306/myapp"},
+    {name: "PORT", value: magic.dockerfile_port.to_s},
     {name: "SECRET", value: "supersecret"},
   ]
 }
