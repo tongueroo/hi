@@ -1,1 +1,2 @@
+#!/bin/bash
 SCHEDULER=yes bundle exec sidekiq -C config/sidekiq-scheduler.yml
