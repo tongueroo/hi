@@ -17,6 +17,7 @@ common = {
 }
 
 task_def "hi-web-prod" do
+  source "web" # will use shipme/templates/web.json.erb
   variables(common.dup.deep_merge(
     family: task_def_name,
     name: "web",
