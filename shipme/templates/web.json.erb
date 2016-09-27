@@ -1,0 +1,29 @@
+{
+    "family": "<%= @family %>", 
+    "containerDefinitions": [
+        {
+            "name": "<%= @name %>", 
+            "image": "<%= @image %>", 
+            "cpu": <%= @cpu %>, 
+            <% if @memory %>
+            "memory": <%= @memory %>, 
+            <% end %>
+            <% if @memory_reservation %>
+            "memoryReservation": <%= @memory_reservation %>, 
+            <% end %>
+            <% if @container_port %>
+            "portMappings": [
+                {
+                    "containerPort": "<%= @container_port %>", 
+                    "protocol": "tcp"
+                }
+            ], 
+            <% end %>
+            "command": <%= @command.to_json %>, 
+            <% if @environment %>
+            "environment": <%= @environment.to_json %>,
+            <% end %>
+            "essential": true
+        }
+    ]
+}
