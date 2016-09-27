@@ -1,2 +1,2 @@
 #!/bin/bash
-PORT=$PORT bundle exec puma -C config/puma.rb
+PORT=$PORT exec bundle exec puma -C config/puma.rb

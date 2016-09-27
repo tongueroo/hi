@@ -1,2 +1,2 @@
 #!/bin/bash
-bundle exec sidekiq -C config/sidekiq.yml
+exec bundle exec sidekiq -C config/sidekiq.yml
