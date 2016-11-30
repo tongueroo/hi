@@ -1,0 +1,6 @@
+#!/bin/bash -ex
+
+while true; do
+  echo "fake worker process running..."
+  sleep 5
+done
