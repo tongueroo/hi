@@ -9,4 +9,4 @@ ufo ship hi-clock --cluster stag --no-wait
 ufo ship hi-worker --cluster stag --no-wait --no-docker
 # The final service will wait for the deploy to finish.  Please specify an
 # Application Load Balancer if creating the service for the first time.
-ufo ship hi-web --cluster stag --no-docker --target-group ''
+ufo ship hi-web --cluster stag --no-docker
