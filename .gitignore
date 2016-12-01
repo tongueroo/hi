@@ -15,3 +15,6 @@
 /log/*
 !/log/.keep
 /tmp
+/ufo/output
+/ufo/docker_image_name*.txt
+/ufo/version

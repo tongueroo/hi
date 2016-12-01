@@ -1,0 +1,7 @@
+image: tongueroo/hi
+service_cluster:
+  default: stag # default cluster
+  # can override the default cluster for each service.  CLI overrides all of these settings.
+  hi-web-prod:
+  hi-clock-prod:
+  hi-worker-prod:
