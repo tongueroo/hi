@@ -1,5 +1,11 @@
 FROM ruby:2.3.3
 
+RUN apt-get update && \
+  apt-get install -y \
+    build-essential \
+    nodejs && \
+  rm -rf /var/lib/apt/lists/* && apt-get clean && apt-get purge
+
 WORKDIR /app
 ADD Gemfile /app/Gemfile
 ADD Gemfile.lock /app/Gemfile.lock
