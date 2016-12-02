@@ -1,4 +1,4 @@
-FROM tongueroo/hi:base-2016-12-01T14-49-53-ca5cbd3
+FROM tongueroo/hi:base-2016-12-02T00-04-13-41e57e5
 
 WORKDIR /app
 ADD Gemfile /app/Gemfile
