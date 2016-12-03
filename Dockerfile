@@ -1,9 +1,25 @@
 FROM ruby:2.3.3
 
 RUN apt-get update && \
+  apt-get install -y net-tools netcat && \
+  rm -rf /var/lib/apt/lists/* && apt-get clean && apt-get purge
+
+# Packages
+# capybara-webkit: libqt4-dev libqtwebkit-dev
+RUN apt-get update && \
+  apt-get install -y software-properties-common && \
+  apt-get update && \
   apt-get install -y \
     build-essential \
-    nodejs && \
+    libqt4-dev libqtwebkit-dev \
+    nodejs \
+    telnet \
+    curl \
+    vim \
+    htop \
+    mysql-client \
+    lsof \
+    git && \
   rm -rf /var/lib/apt/lists/* && apt-get clean && apt-get purge
 
 WORKDIR /app
