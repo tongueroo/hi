@@ -1,4 +1,4 @@
-FROM tongueroo/hi:base-2016-12-03T00-45-58-2af505e
+FROM 467446852200.dkr.ecr.us-east-1.amazonaws.com/hi:base-2016-12-03T01-14-46-182519e
 
 WORKDIR /app
 ADD Gemfile /app/Gemfile

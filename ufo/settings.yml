@@ -1,4 +1,4 @@
-image: tongueroo/hi
+image: 467446852200.dkr.ecr.us-east-1.amazonaws.com/hi
 service_cluster:
   default: stag # default cluster
   # can override the default cluster for each service.  CLI overrides all of these settings.
