@@ -1,109 +1,321 @@
+GIT
+  remote: git://github.com/octokit/octokit.rb.git
+  revision: 7c2d36f52ffea5b4f52e25bfa27d7b6c8e514975
+  specs:
+    octokit (4.6.2)
+      sawyer (~> 0.8.0, >= 0.5.3)
+
+GIT
+  remote: git://github.com/rubysherpas/paranoia.git
+  revision: 77413f1e26935193771cf5fb6d67b47ebcec7148
+  branch: core
+  specs:
+    paranoia (2.2.0)
+      activerecord (>= 4.0, < 5.1)
+
+GIT
+  remote: git://github.com/sinatra/sinatra.git
+  revision: 63e81bc539b36778c6bd50a303750ab52ee2b2fb
+  specs:
+    rack-protection (2.0.0.beta2)
+      rack
+    sinatra (2.0.0.beta2)
+      mustermann (= 1.0.0.beta2)
+      rack (~> 2.0)
+      rack-protection (= 2.0.0.beta2)
+      tilt (~> 2.0)
+
+GIT
+  remote: git://github.com/tongueroo/opal-bootbox.git
+  revision: 39a011f25a5b75b87e5cb2a106adcc5e7a8d9f26
+  specs:
+    opal-bootbox (0.1.3)
+      opal
+
+GIT
+  remote: git://github.com/tongueroo/opal-browser.git
+  revision: ae7edea24dccec532aea5110c595645b5d5b0cf6
+  specs:
+    opal-browser (0.2.0)
+      opal
+      paggio
+
+GIT
+  remote: git://github.com/tongueroo/sidekiq-middleware.git
+  revision: 37af4abac8e58c3ec5c6331017e0b99345a18f03
+  specs:
+    sidekiq-middleware (0.3.0)
+      sidekiq (>= 2.12.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
-    actionmailer (4.2.3)
-      actionpack (= 4.2.3)
-      actionview (= 4.2.3)
-      activejob (= 4.2.3)
+    actioncable (5.0.0.1)
+      actionpack (= 5.0.0.1)
+      nio4r (~> 1.2)
+      websocket-driver (~> 0.6.1)
+    actionmailer (5.0.0.1)
+      actionpack (= 5.0.0.1)
+      actionview (= 5.0.0.1)
+      activejob (= 5.0.0.1)
       mail (~> 2.5, >= 2.5.4)
-      rails-dom-testing (~> 1.0, >= 1.0.5)
-    actionpack (4.2.3)
-      actionview (= 4.2.3)
-      activesupport (= 4.2.3)
-      rack (~> 1.6)
-      rack-test (~> 0.6.2)
-      rails-dom-testing (~> 1.0, >= 1.0.5)
+      rails-dom-testing (~> 2.0)
+    actionpack (5.0.0.1)
+      actionview (= 5.0.0.1)
+      activesupport (= 5.0.0.1)
+      rack (~> 2.0)
+      rack-test (~> 0.6.3)
+      rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionview (4.2.3)
-      activesupport (= 4.2.3)
+    actionview (5.0.0.1)
+      activesupport (= 5.0.0.1)
       builder (~> 3.1)
       erubis (~> 2.7.0)
-      rails-dom-testing (~> 1.0, >= 1.0.5)
+      rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    activejob (4.2.3)
-      activesupport (= 4.2.3)
-      globalid (>= 0.3.0)
-    activemodel (4.2.3)
-      activesupport (= 4.2.3)
-      builder (~> 3.1)
-    activerecord (4.2.3)
-      activemodel (= 4.2.3)
-      activesupport (= 4.2.3)
-      arel (~> 6.0)
-    activesupport (4.2.3)
+    active_model_serializers (0.8.3)
+      activemodel (>= 3.0)
+    active_record_query_trace (1.5.4)
+    activejob (5.0.0.1)
+      activesupport (= 5.0.0.1)
+      globalid (>= 0.3.6)
+    activemodel (5.0.0.1)
+      activesupport (= 5.0.0.1)
+    activerecord (5.0.0.1)
+      activemodel (= 5.0.0.1)
+      activesupport (= 5.0.0.1)
+      arel (~> 7.0)
+    activerecord-import (0.16.2)
+      activerecord (>= 3.2)
+    activesupport (5.0.0.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (~> 0.7)
-      json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    arel (6.0.3)
-    binding_of_caller (0.7.2)
-      debug_inspector (>= 0.0.1)
+    addressable (2.5.0)
+      public_suffix (~> 2.0, >= 2.0.2)
+    arel (7.1.4)
+    attr_extras (5.1.0)
+    autoprefixer-rails (6.5.3)
+      execjs
+    aws-sdk (2.6.32)
+      aws-sdk-resources (= 2.6.32)
+    aws-sdk-core (2.6.32)
+      aws-sigv4 (~> 1.0)
+      jmespath (~> 1.0)
+    aws-sdk-resources (2.6.32)
+      aws-sdk-core (= 2.6.32)
+    aws-sigv4 (1.0.0)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
+    bourbon (4.2.7)
+      sass (~> 3.4)
+      thor (~> 0.19)
     builder (3.2.2)
     byebug (9.0.6)
-    coffee-rails (4.1.1)
+    canonical-rails (0.1.1)
+      rails (>= 4.1, < 5.1)
+    capybara (2.10.2)
+      addressable
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
+    coderay (1.1.1)
+    coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
-      railties (>= 4.0.0, < 5.1.x)
+      railties (>= 4.0.0, < 5.2.x)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
     coffee-script-source (1.11.1)
+    colored (1.2)
     concurrent-ruby (1.0.2)
+    connection_pool (2.2.1)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
+    dalli (2.7.6)
+    database_cleaner (1.5.3)
     debug_inspector (0.0.2)
+    diff-lcs (1.2.5)
+    dogstatsd-ruby (2.1.0)
+    dotenv (2.1.1)
+    dotenv-rails (2.1.1)
+      dotenv (= 2.1.1)
+      railties (>= 4.0, < 5.1)
     erubis (2.7.0)
     execjs (2.7.0)
+    factory_girl (4.7.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.7.0)
+      factory_girl (~> 4.7.0)
+      railties (>= 3.0.0)
+    faraday (0.9.2)
+      multipart-post (>= 1.2, < 3)
+    ffi (1.9.14)
+    foreman (0.82.0)
+      thor (~> 0.19.1)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
+    haml (4.0.7)
+      tilt
+    haml-rails (0.9.0)
+      actionpack (>= 4.0.1)
+      activesupport (>= 4.0.1)
+      haml (>= 4.0.6, < 5.0)
+      html2haml (>= 1.0.1)
+      railties (>= 4.0.1)
+    hashdiff (0.3.1)
+    hashie (3.4.6)
+    high_voltage (3.0.0)
+    hike (1.2.3)
+    html2haml (2.0.0)
+      erubis (~> 2.7.0)
+      haml (~> 4.0.0)
+      nokogiri (~> 1.6.0)
+      ruby_parser (~> 3.5)
     i18n (0.7.0)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
+    jmespath (1.3.1)
     jquery-rails (4.2.1)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
-    json (1.8.3)
+    jwt (1.5.6)
+    launchy (2.4.3)
+      addressable (~> 2.3)
+    listen (3.0.8)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
+    memcachier (0.0.2)
+    method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
-    minitest (5.9.1)
+    minitest (5.10.1)
     multi_json (1.12.1)
+    multi_xml (0.5.5)
+    multipart-post (2.0.0)
+    mustermann (1.0.0.beta2)
+    nio4r (1.2.1)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-    rack (1.6.5)
+    oauth2 (1.2.0)
+      faraday (>= 0.8, < 0.10)
+      jwt (~> 1.0)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
+      rack (>= 1.2, < 3)
+    omniauth (1.3.1)
+      hashie (>= 1.2, < 4)
+      rack (>= 1.0, < 3)
+    omniauth-github (1.1.2)
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.1)
+    omniauth-oauth2 (1.4.0)
+      oauth2 (~> 1.0)
+      omniauth (~> 1.2)
+    opal (0.10.3)
+      hike (~> 1.2)
+      sourcemap (~> 0.1.0)
+      sprockets (~> 3.1)
+      tilt (>= 1.4)
+    opal-activesupport (0.3.0)
+      opal (>= 0.5.0, < 1.0.0)
+    opal-haml (0.4.2)
+      haml
+      opal (~> 0.10.0)
+    opal-jquery (0.4.2)
+      opal (>= 0.7.0, < 0.11.0)
+    opal-rails (0.9.1)
+      jquery-rails
+      opal (>= 0.8.0, < 0.11)
+      opal-activesupport (>= 0.0.5)
+      opal-jquery (~> 0.4.0)
+      opal-sprockets (~> 0.4.0)
+      rails (>= 4.0, < 6.0)
+      sprockets-rails (< 3.0)
+    opal-sprockets (0.4.0.0.10.0.3.0.0)
+      opal (~> 0.10.0)
+      sprockets (~> 3.0)
+      tilt (>= 1.4)
+    paggio (0.2.6)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    public_suffix (2.0.4)
+    puma (3.6.2)
+    rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
-    rails (4.2.3)
-      actionmailer (= 4.2.3)
-      actionpack (= 4.2.3)
-      actionview (= 4.2.3)
-      activejob (= 4.2.3)
-      activemodel (= 4.2.3)
-      activerecord (= 4.2.3)
-      activesupport (= 4.2.3)
+    rack-timeout (0.4.2)
+    rails (5.0.0.1)
+      actioncable (= 5.0.0.1)
+      actionmailer (= 5.0.0.1)
+      actionpack (= 5.0.0.1)
+      actionview (= 5.0.0.1)
+      activejob (= 5.0.0.1)
+      activemodel (= 5.0.0.1)
+      activerecord (= 5.0.0.1)
+      activesupport (= 5.0.0.1)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 4.2.3)
-      sprockets-rails
-    rails-deprecated_sanitizer (1.0.3)
-      activesupport (>= 4.2.0.alpha)
-    rails-dom-testing (1.0.7)
-      activesupport (>= 4.2.0.beta, < 5.0)
+      railties (= 5.0.0.1)
+      sprockets-rails (>= 2.0.0)
+    rails-dom-testing (2.0.1)
+      activesupport (>= 4.2.0, < 6.0)
       nokogiri (~> 1.6.0)
-      rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    railties (4.2.3)
-      actionpack (= 4.2.3)
-      activesupport (= 4.2.3)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
+    railties (5.0.0.1)
+      actionpack (= 5.0.0.1)
+      activesupport (= 5.0.0.1)
+      method_source
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (11.3.0)
-    rdoc (4.3.0)
+    rb-fsevent (0.9.8)
+    rb-inotify (0.9.7)
+      ffi (>= 0.5.0)
+    redis (3.3.2)
+    redis-namespace (1.5.2)
+      redis (~> 3.0, >= 3.0.4)
+    rouge (1.10.1)
+    rspec-core (3.5.4)
+      rspec-support (~> 3.5.0)
+    rspec-expectations (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-mocks (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-rails (3.5.2)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 3.5.0)
+      rspec-expectations (~> 3.5.0)
+      rspec-mocks (~> 3.5.0)
+      rspec-support (~> 3.5.0)
+    rspec-support (3.5.0)
+    ruby_parser (3.8.3)
+      sexp_processor (~> 4.1)
+    rufus-scheduler (3.1.10)
+    safe_yaml (1.0.4)
     sass (3.4.22)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
@@ -111,18 +323,36 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    sdoc (0.4.2)
-      json (~> 1.7, >= 1.7.7)
-      rdoc (~> 4.0)
-    spring (2.0.0)
-      activesupport (>= 4.2)
+    sawyer (0.8.1)
+      addressable (>= 2.3.5, < 2.6)
+      faraday (~> 0.8, < 1.0)
+    sentry-raven (2.1.4)
+      faraday (>= 0.7.6, < 0.10.x)
+    sexp_processor (4.7.0)
+    shoulda-matchers (3.1.1)
+      activesupport (>= 4.0.0)
+    sidekiq (4.2.7)
+      concurrent-ruby (~> 1.0)
+      connection_pool (~> 2.2, >= 2.2.0)
+      rack-protection (>= 1.5.0)
+      redis (~> 3.2, >= 3.2.1)
+    sidekiq-scheduler (2.0.21)
+      hashie (~> 3.4)
+      redis (~> 3)
+      rufus-scheduler (~> 3.1.8)
+      sidekiq (>= 3)
+      tilt (>= 1.4.0)
+    skylight (1.0.1)
+      activesupport (>= 3.0.0)
+    slop (3.6.0)
+    sourcemap (0.1.1)
     sprockets (3.7.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.2.0)
-      actionpack (>= 4.0)
-      activesupport (>= 4.0)
-      sprockets (>= 3.0.0)
+    sprockets-rails (2.3.3)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      sprockets (>= 2.8, < 4.0)
     sqlite3 (1.3.12)
     thor (0.19.4)
     thread_safe (0.3.5)
@@ -134,28 +364,87 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.4)
       execjs (>= 0.3.0, < 3)
-    web-console (2.3.0)
-      activemodel (>= 4.0)
-      binding_of_caller (>= 0.7.2)
-      railties (>= 4.0)
-      sprockets-rails (>= 2.0, < 4.0)
+    watchr (0.7)
+    web-console (3.4.0)
+      actionview (>= 5.0)
+      activemodel (>= 5.0)
+      debug_inspector
+      railties (>= 5.0)
+    webmock (2.1.0)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
+    websocket-driver (0.6.4)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.2)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers (= 0.8.3)
+  active_record_query_trace
+  activerecord-import
+  attr_extras
+  autoprefixer-rails
+  aws-sdk
+  bootstrap-sass (~> 3.3.1)
+  bourbon
   byebug
-  coffee-rails (~> 4.1.0)
-  jbuilder (~> 2.0)
+  canonical-rails
+  capybara
+  coffee-rails (~> 4.2)
+  colored
+  dalli
+  database_cleaner
+  dogstatsd-ruby
+  dotenv-rails
+  factory_girl_rails
+  foreman
+  haml-rails
+  high_voltage
+  jbuilder (~> 2.5)
   jquery-rails
-  rails (= 4.2.3)
+  launchy
+  listen (~> 3.0.5)
+  memcachier
+  octokit!
+  omniauth-github
+  opal
+  opal-bootbox!
+  opal-browser!
+  opal-haml
+  opal-jquery
+  opal-rails
+  paranoia!
+  pry
+  puma (~> 3.0)
+  rack-timeout
+  rails (~> 5.0.0)
+  rails_12factor
+  redis (~> 3.0)
+  redis-namespace
+  rouge (= 1.10.1)
+  rspec-rails (~> 3.0)
   sass-rails (~> 5.0)
-  sdoc (~> 0.4.0)
-  spring
+  sentry-raven
+  shoulda-matchers
+  sidekiq
+  sidekiq-middleware!
+  sidekiq-scheduler
+  sinatra!
+  skylight
   sqlite3
-  turbolinks
+  turbolinks (~> 5)
   uglifier (>= 1.3.0)
-  web-console (~> 2.0)
+  watchr
+  web-console
+  webmock
+
+RUBY VERSION
+   ruby 2.3.3p222
 
 BUNDLED WITH
    1.13.6
