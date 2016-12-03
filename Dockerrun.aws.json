@@ -1,0 +1,12 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Authentication": {
+    "Bucket": "gr-ops",
+    "Key": "eb/dockercfg"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "3000"
+    }
+  ]
+}
