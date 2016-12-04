@@ -1,0 +1,30 @@
+machine:
+  ruby:
+    version: 2.3.3
+  services:
+    - docker
+dependencies:
+  pre:
+    - gem install --no-ri --no-rdoc ufo
+  override:
+    - cp .env.example .env
+    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+    - aws configure set default.region us-east-1
+    - eval `aws ecr get-login`
+database:
+  override:
+    - cat /dev/null
+checkout:
+  post:
+    - mkdir -p tmp/cache tmp/pids
+test:
+  override:
+    - ufo docker build
+    - docker tag $(ufo docker image_name) hi_web
+    - docker-compose run web bundle exec rake db:create db:migrate
+    - docker-compose run web bundle exec rake
+deployment:
+ master:
+   branch: master
+   commands:
+     - ufo ship hi-web-stag --no-docker
