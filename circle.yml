@@ -8,9 +8,6 @@ dependencies:
     - gem install --no-ri --no-rdoc ufo
   override:
     - cp .env.example .env
-    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-    - aws configure set default.region us-east-1
-    - eval `aws ecr get-login`
 database:
   override:
     - cat /dev/null
