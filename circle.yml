@@ -11,9 +11,6 @@ dependencies:
 database:
   override:
     - cat /dev/null
-checkout:
-  post:
-    - mkdir -p tmp/cache tmp/pids
 test:
   override:
     - ufo docker build
