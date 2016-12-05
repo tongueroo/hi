@@ -4,6 +4,8 @@ machine:
   services:
     - docker
 dependencies:
+  pre:
+    - gem install --no-ri --no-rdoc ufo
   override:
     - cp .env.example .env
 database:
