@@ -9,7 +9,10 @@ phases:
     commands:
       - cat /etc/lsb-release
       - apt-get update -y
-      - apt-get install -y ruby
+      - apt-get install -y software-properties-common
+      - apt-add-repository -y ppa:brightbox/ruby-ng
+      - apt-get update -y
+      - apt-get install -y ruby2.3 ruby2.3-dev
       - gem install --no-ri --no-rdoc ufo
   pre_build:
     commands:
