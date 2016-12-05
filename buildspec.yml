@@ -16,7 +16,7 @@ phases:
     commands:
       - echo Build started on `date`
       - bundle exec rake db:create db:migrate
-      - run web bundle exec rake
+      - bundle exec rake
   post_build:
     commands:
       - echo Build completed on `date`
