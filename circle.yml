@@ -18,7 +18,7 @@ test:
     - docker-compose run web bundle exec rake db:create db:migrate
     - docker-compose run web bundle exec rake
 deployment:
- master:
-   branch: master
+ staging:
+   branch: circle-ecs
    commands:
-     - ufo ship hi-web-stag --no-docker
+     - ufo ship hi-web --cluster stag --no-docker
