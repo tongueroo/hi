@@ -21,4 +21,4 @@ deployment:
  staging:
    branch: circle-ecs
    commands:
-     - ufo ship hi-web --cluster stag --no-docker
+     - ufo ship hi-web --cluster stag --no-docker --no-wait
