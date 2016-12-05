@@ -10,7 +10,6 @@ phases:
       - cat /etc/os-release
       - uname -a
       - pwd
-      - docker images
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
