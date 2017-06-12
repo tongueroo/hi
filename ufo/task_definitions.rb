@@ -13,9 +13,14 @@ common = {
   cpu: 128,
   memory_reservation: 256,
   environment: helper.env_file(".env")
+  # another example
+  # environment: helper.env_vars(%Q{
+  #   RAILS_ENV=production
+  #   SECRET_KEY_BASE=secret
+  # })
 }
 
-task_definition "hi-web" do
+task_definition "hi-web-stag" do
   source "main" # will use ufo/templates/main.json.erb
   variables(common.dup.deep_merge(
     family: task_definition_name,
@@ -25,7 +30,7 @@ task_definition "hi-web" do
   ))
 end
 
-task_definition "hi-worker" do
+task_definition "hi-worker-stag" do
   source "main" # will use ufo/templates/main.json.erb
   variables(common.dup.deep_merge(
     family: task_definition_name,
@@ -34,7 +39,7 @@ task_definition "hi-worker" do
   ))
 end
 
-task_definition "hi-clock" do
+task_definition "hi-clock-stag" do
   source "main" # will use ufo/templates/main.json.erb
   variables(common.dup.deep_merge(
     family: task_definition_name,
