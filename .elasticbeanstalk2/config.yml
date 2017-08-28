@@ -1,0 +1,12 @@
+branch-defaults: 
+  master: 
+    environment: hi-web-stag
+global: 
+  application_name: hi
+  branch: 
+  default_ec2_keyname: 
+  default_platform: 64bit Amazon Linux 2016.03 v2.1.0 running Docker 1.9.1
+  default_region: us-east-1
+  profile: 
+  repository: 
+  sc: git
