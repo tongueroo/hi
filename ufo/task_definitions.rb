@@ -20,7 +20,7 @@ common = {
   # })
 }
 
-task_definition "hi-web-prod" do
+task_definition "hi-web" do
   source "main" # will use ufo/templates/main.json.erb
   variables(common.dup.deep_merge(
     family: task_definition_name,
@@ -30,7 +30,7 @@ task_definition "hi-web-prod" do
   ))
 end
 
-task_definition "hi-worker-prod" do
+task_definition "hi-worker" do
   source "main" # will use ufo/templates/main.json.erb
   variables(common.dup.deep_merge(
     family: task_definition_name,
@@ -39,7 +39,7 @@ task_definition "hi-worker-prod" do
   ))
 end
 
-task_definition "hi-clock-prod" do
+task_definition "hi-clock" do
   source "main" # will use ufo/templates/main.json.erb
   variables(common.dup.deep_merge(
     family: task_definition_name,
