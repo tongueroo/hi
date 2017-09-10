@@ -7,43 +7,30 @@
 #
 # env_vars - is a helper method that generates the proper environment Array of Hashes
 
-# common variables
-common = {
-  image: helper.full_image_name, # includes the git sha tongueroo/hi:ufo-[sha].
-  cpu: 128,
-  memory_reservation: 256,
-  environment: helper.env_file(".env")
-  # another example
-  # environment: helper.env_vars(%Q{
-  #   RAILS_ENV=production
-  #   SECRET_KEY_BASE=secret
-  # })
-}
-
 task_definition "hi-web" do
   source "main" # will use ufo/templates/main.json.erb
-  variables(common.dup.deep_merge(
+  variables(
     family: task_definition_name,
     name: "web",
     container_port: helper.dockerfile_port,
     command: ["bin/web"]
-  ))
+  )
 end
 
 task_definition "hi-worker" do
   source "main" # will use ufo/templates/main.json.erb
-  variables(common.dup.deep_merge(
+  variables(
     family: task_definition_name,
     name: "worker",
     command: ["bin/worker"]
-  ))
+  )
 end
 
 task_definition "hi-clock" do
   source "main" # will use ufo/templates/main.json.erb
-  variables(common.dup.deep_merge(
+  variables(
     family: task_definition_name,
     name: "clock",
     command: ["bin/clock"]
-  ))
+  )
 end
