@@ -1,7 +1,18 @@
+# More info: http://ufoships.com/docs/ufo-settings/
 image: tongueroo/hi
-service_cluster:
-  default: stag # default cluster
-  # can override the default cluster for each service.  CLI overrides all of these settings.
-  hi-web-prod:
-  hi-clock-prod:
-  hi-worker-prod:
+# clean_keep: 30
+# ecr_keep: 30
+
+# aws_profile_ufo_env_map:
+#   default: staging
+#   # More examples:
+#   aws_profile1: production
+#   aws_profile2: staging
+#   aws_profile3: development
+
+# ufo_env_cluster_map:
+#   default: prod
+#   # More examples:
+#   production: prod
+#   staging: stag
+#   development: dev
