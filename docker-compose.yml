@@ -1,0 +1,24 @@
+version: '3'
+services:
+  web:
+    build: .
+    env_file:
+      - env-compose.txt
+    ports:
+      - "3000:3000"
+    command: bin/web
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: demo
+      POSTGRES_USER: MyUser
+      POSTGRES_PASSWORD: MyPassword
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+

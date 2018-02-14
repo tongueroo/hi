@@ -1,3 +1,19 @@
-# Demo Rails App
+# README
 
-A simple demo rails app that has a fake `bin/worker` and `bin/clock` process.  This app is use to test the [ufo](https://github.com/tongueroo/ufo) tool.
+Simple demo rails app. It has a demo controller that shows successful access to the database.
+
+## Setup
+
+```sh
+git clone https://github.com/tongueroo/demo-rails
+cd demo-rails
+cp config/database{.example,}.yml
+# edit config/database.yml with the desired database endpoint
+bundle
+rails s # start server
+```
+
+Now you can should be able to go to the url endpoint to see the demo page. Here's the relevant code:
+
+* [app/controllers/demo_controller.rb](app/controllers/demo_controller.rb)
+* [app/views/demo/index.html.erb](app/views/demo/index.html.erb)
