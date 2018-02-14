@@ -7,6 +7,6 @@ class DemoController < ApplicationController
   private
   def db_version
     # https://makandracards.com/makandra/42104-rails-how-to-get-postgresql-version-being-used
-    ActiveRecord::Base.connection.select_value('SELECT version()')
+    ActiveRecord::Base.connection.select_value('select sqlite_version()')
   end
 end
